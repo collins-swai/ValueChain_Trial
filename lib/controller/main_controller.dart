@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-import 'dart:ffi';
 import 'package:activity/activity.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_valuechain/models/TaskModel.dart';
@@ -9,7 +6,7 @@ class MainController extends ActiveController {
   GlobalKey globalKey = GlobalKey<FormState>();
 
   Memory memory = Memory.memory;
-  ActiveString appTitle = ActiveString('First Title');
+  ActiveString appTitle = ActiveString('Task Manager');
   ActiveInt appBarSize = ActiveInt(45);
   ActiveInt pageNumber = ActiveInt(1);
   ActiveInt pageSize = ActiveInt(2);
