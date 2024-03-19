@@ -1,5 +1,6 @@
 import 'package:activity/core/active.dart';
 import 'package:flutter/material.dart';
+import 'package:todo_valuechain/controller/add_todo_controlller.dart';
 import 'package:todo_valuechain/controller/main_controller.dart';
 import 'task_list_screen.dart';
 
@@ -15,7 +16,9 @@ class _TaskActivityState extends State<TaskActivity> {
   Widget build(BuildContext context) {
     return Scaffold(
       // body: TaskListScreen(),
-      body: TaskListScreen(),
+      body: TaskListScreen(
+        activeController: AddTodoController(),
+      ),
     );
   }
 }
