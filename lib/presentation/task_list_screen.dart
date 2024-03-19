@@ -38,7 +38,7 @@ class _TaskListScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Task Manager'),
+        title: Text(activeController.appTitle.value),
       ),
       body: Container(
         padding: const EdgeInsets.all(16.0),
