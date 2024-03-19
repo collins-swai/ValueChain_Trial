@@ -13,7 +13,7 @@ class AddTodoController extends MainController {
   final TextEditingController taskDescriptionController =
       TextEditingController();
   final TextEditingController taskPriorityController = TextEditingController();
-  ActiveBool state =  ActiveBool(false);
+  ActiveBool state = ActiveBool(false);
 
   static void initializeQuickeyDB() async {
     await QuickeyDB.initialize(
@@ -61,8 +61,6 @@ class AddTodoController extends MainController {
 
   @override
   List<ActiveType> get activities {
-    return [
-      state
-    ];
+    return [state];
   }
 }
