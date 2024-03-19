@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quickeydb/quickeydb.dart';
+import 'package:todo_valuechain/controller/update_todo_controller.dart';
 import 'package:todo_valuechain/database/TaskSchema.dart';
 import 'package:todo_valuechain/presentation/add_todo_screen.dart';
 
@@ -94,7 +95,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => UpdateTodoScreen(
-                                    task: task,
+                                    task: task, activeController: UpdateTodoController(),
                                   ),
                                 ),
                               );
