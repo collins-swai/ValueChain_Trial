@@ -110,6 +110,9 @@ class _TaskListScreenState
                               );
                               if (updatedTask != null) {
                                 activeController.state.isTrue;
+                                setState(() {
+                                  activeController.state.isTrue;
+                                });
                                 Future.delayed(const Duration(seconds: 1), () {
                                   activeController.state.isFalse;
                                   ScaffoldMessenger.of(context).showSnackBar(
@@ -193,6 +196,7 @@ class _TaskListScreenState
                                           ),
                                         ],
                                       ),
+
                                     ],
                                   ),
                                   trailing: Checkbox(
